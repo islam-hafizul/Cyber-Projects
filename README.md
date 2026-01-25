@@ -2,7 +2,7 @@
 
 An educational repository containing beginner Python scripts related to cybersecurity concepts, network security, automation, and hands-on practice. This collection demonstrates various network security tools and utilities built with Python.
 
-**⚠️ Disclaimer**: These tools are for educational and authorized testing purposes only. Unauthorized access to computer systems is illegal.
+**Disclaimer: Some tools are for educational and authorized testing purposes only. Unauthorized access to computer systems is illegal.**
 
 ## Projects Overview
 
@@ -20,29 +20,33 @@ A multi-threaded TCP port scanner that identifies open and closed ports on targe
 **Key Technologies**: `socket`, `threading`, `Queue`
 
 ---
+### 2. [Caesar Cipher](Caesar%20Cipher)
 
-### 2. [DoS Attack Script](DoS%20Attack%20Script)
+A simple implementation of the Caesar cipher algorithm for encrypting and decrypting text messages.
 
-An educational Denial of Service attack script demonstrating network attack concepts.
+**Features:**
+- Encrypt messages with a specified shift value
+- Decrypt messages by reversing the shift
+- Case preservation for uppercase and lowercase letters
+- Non-alphabetic character preservation (numbers, spaces, special characters)
+- Interactive command-line menu interface
 
-**Note**: This tool is strictly for educational purposes and authorized testing only. Unauthorized DoS attacks are illegal.
-
-**Key Technologies**: Network protocols, attack simulation
+**Key Technologies**: String manipulation, ASCII encoding, modulo arithmetic 
 
 ---
 
-### 3. [Mailing Client](Mailing%20Client)
+### 3. [SMTP Mailer](SMTP%20Mailer)
 
-An email client utility for sending messages programmatically.
+An email utility for sending messages programmatically using SMTP protocol.
 
 **Key Technologies**: `smtplib`, Email protocols
 
-## Requirements
+#### Requirements
 
 - Python 3.x
 - Standard library modules (no external dependencies for most scripts)
 
-## Installation
+#### Installation
 
 1. Clone the repository:
 ```bash
@@ -56,6 +60,16 @@ cd Cyber-Projects
 ```bash
 python <script_name>.py
 ```
+---
+
+### 4. [Simple DoS Script](Simple%20DoS%20Script)
+
+An educational Denial of Service attack script demonstrating network attack concepts.
+
+**Note**: This tool is strictly for educational purposes and authorized testing only. Unauthorized DoS attacks are illegal.
+
+**Key Technologies**: Network protocols, attack simulation
+
 
 ## Educational Purpose
 
@@ -66,16 +80,6 @@ These scripts are designed to:
 - Understand security tools and their implementation
 - Learn about ethical hacking practices
 
-## Important Notes
-
-⚠️ **Legal Disclaimer:**
-- Use these tools only on systems you own or have explicit permission to test
-- Unauthorized access to computer systems violates laws in most jurisdictions
-- Unauthorized DoS attacks are illegal
-- Unauthorized port scanning may violate network usage policies
-- Always obtain written permission before testing any system
-
-
 ## Contributing
 
 This is an educational project. Feel free to:
@@ -84,10 +88,18 @@ This is an educational project. Feel free to:
 - Enhance documentation
 - Fix bugs or optimize performance
 
-## License
-
-See LICENSE file for details.
-
 ## Disclaimer
 
 These tools are provided for educational and authorized security testing purposes only. The author is not responsible for misuse or illegal activities. Always follow applicable laws and regulations.
+
+
+**⚠️ Legal Disclaimer:**
+- Use these tools only on systems you own or have explicit permission to test
+- Unauthorized access to computer systems violates laws in most jurisdictions
+- Unauthorized DoS attacks are illegal
+- Unauthorized port scanning may violate network usage policies
+- Always obtain written permission before testing any system
+
+## License
+
+See LICENSE file for details.

@@ -1,4 +1,4 @@
-# Mailing Client - Python Email Automation
+# SMTP Mailer - Python Email Automation
 
 A Python script to send emails with attachments using Gmail's SMTP server. 
 - Send emails with plain text body
@@ -23,7 +23,7 @@ A Python script to send emails with attachments using Gmail's SMTP server.
 ### Usage
 1. Place your message in `message.txt`
 2. Place attachment file (e.g., `image.jpg`) in same directory
-3. Run the script: `python email_sender.py` 
+3. Run the script: `python smtp_mailer.py` 
 4. Enter your Gmail App Password when prompted
 
 ## License
