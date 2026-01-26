@@ -1,8 +1,8 @@
 # Cyber-Projects
 
-An educational repository containing beginner Python scripts related to cybersecurity concepts, network security, automation, and hands-on practice. This collection demonstrates various network security tools and utilities built with Python.
+An educational repository containing beginner to intermediate Python scripts spanning cybersecurity domains including cryptography, network security, defensive tools, offensive security utilities, and hands-on automation practice. This collection demonstrates practical implementations of security tools and concepts using Python.
 
-**Disclaimer: Some tools are for educational and authorized testing purposes only. Unauthorized access to computer systems is illegal.**
+**Disclaimer: These tools are for educational purposes, authorized testing, and skill development only. Unauthorized access to systems without permission is illegal.**
 
 ## Projects Overview
 
@@ -34,8 +34,20 @@ A simple implementation of the Caesar cipher algorithm for encrypting and decryp
 **Key Technologies**: String manipulation, ASCII encoding, modulo arithmetic 
 
 ---
+### 3. [Vigenère Cipher](Vigenère%20Cipher)
 
-### 3. [SMTP Mailer](SMTP%20Mailer)
+An advanced polyalphabetic cipher that uses multiple substitution alphabets based on a keyword.
+
+**Features:**
+- Polyalphabetic encryption/decryption with key management
+- Letter frequency analysis for cryptanalysis
+- Interactive CLI with Tabula Recta display
+- Automatic text cleaning and case handling
+
+**Key Technologies:** Polyalphabetic substitution, frequency analysis, modular arithmetic
+
+---
+### 4. [SMTP Mailer](SMTP%20Mailer)
 
 An email utility for sending messages programmatically using SMTP protocol.
 
@@ -46,23 +58,8 @@ An email utility for sending messages programmatically using SMTP protocol.
 - Python 3.x
 - Standard library modules (no external dependencies for most scripts)
 
-#### Installation
-
-1. Clone the repository:
-```bash
-git clone https://github.com/yourusername/Cyber-Projects.git
-cd Cyber-Projects
-```
-
-2. Navigate to the desired project folder
-
-3. Run the script:
-```bash
-python <script_name>.py
-```
 ---
-
-### 4. [Simple DoS Script](Simple%20DoS%20Script)
+### 5. [Simple DoS Script](Simple%20DoS%20Script)
 
 An educational Denial of Service attack script demonstrating network attack concepts.
 
