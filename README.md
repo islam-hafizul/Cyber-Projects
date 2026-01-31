@@ -6,18 +6,18 @@ An educational repository containing beginner to intermediate Python scripts spa
 
 ## Projects Overview
 
-### 1. [Port Scanner](Port%20Scanner)
+### 1. [Network Scanner](Network%20Scanner)
 
-A multi-threaded TCP port scanner that identifies open and closed ports on target hosts.
+A multi-threaded network discovery tool that identifies active hosts and open services on local networks.
 
 **Features:**
-- Fast parallel scanning using 50 concurrent threads
-- Scans common ports 1-1024
-- Supports both IP addresses and hostname resolution
-- Thread-safe output with clean result display
-- Sorted results for easy analysis
+- ARP-based host discovery with MAC address resolution
+- TCP port scanning for common services (21-443, 3389)
+- Ping sweep capability for network mapping
+- Hostname resolution for device identification
+- Concurrent scanning with thread-safe operations
 
-**Key Technologies**: `socket`, `threading`, `Queue`
+**Key Technologies**: `scapy`, `socket`, `argparse`
 
 ---
 ### 2. [Caesar Cipher](Caesar%20Cipher)
@@ -47,7 +47,21 @@ An advanced polyalphabetic cipher that uses multiple substitution alphabets base
 **Key Technologies:** Polyalphabetic substitution, frequency analysis, modular arithmetic
 
 ---
-### 4. [SMTP Mailer](SMTP%20Mailer)
+### 4. [Simple Port Scanner](Port%20Scanner)
+
+A multi-threaded TCP port scanner that identifies open and closed ports on target hosts.
+
+**Features:**
+- Fast parallel scanning using 50 concurrent threads
+- Scans common ports 1-1024
+- Supports both IP addresses and hostname resolution
+- Thread-safe output with clean result display
+- Sorted results for easy analysis
+
+**Key Technologies**: `socket`, `threading`, `Queue`
+
+---
+### 5. [SMTP Mailer](SMTP%20Mailer)
 
 An email utility for sending messages programmatically using SMTP protocol.
 
@@ -59,7 +73,7 @@ An email utility for sending messages programmatically using SMTP protocol.
 - Standard library modules (no external dependencies for most scripts)
 
 ---
-### 5. [Simple DoS Script](Simple%20DoS%20Script)
+### 6. [Simple DoS Script](Simple%20DoS%20Script)
 
 An educational Denial of Service attack script demonstrating network attack concepts.
 
